@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 100px;
+    font-size: 64px;
+};
+
+.title:hover {
+    color: red;
+}
+
+#todo-list {
+  width: 100%;
+  margin: 80px auto;
+}
+
+form, .todo {
+  border: 1px double grey;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+input[type='text'] { 
+    font-size: 20px; font-family: monospace; 
+}
+
+.todo input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 16px;
+  cursor: pointer;
+}
+
+.todo-text input {
+  padding: 4px;
+}
+
+.todo-text {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-completed {
+  display: flex;
+  margin: 10px 0;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 6px;
+  padding: 8px;
+}
+
+button.add {
+    background-color: rgb(18, 184, 18);
+}
+
+button.add:hover {
+    background-color: rgb(22, 136, 22);
+}
+
+.todo-actions button.done {
+    background-color: rgb(18, 184, 18);
+}
+
+.todo-actions button.done:hover {
+    background-color: rgb(22, 136, 22);
+}
+
+.todo-actions button.delete{
+    margin-left: 5px;
+    background-color: rgb(217, 60, 35);
+}
+
+.todo-actions button.delete:hover{
+    background-color: rgb(130,35,21);
+}
+
+.todo-actions button.edit{
+    margin-right: 5px;
+    background-color: rgb(40, 96, 216);
+}
+
+.todo-actions button.edit:hover{
+    background-color: rgb(37, 57, 170);
+}
